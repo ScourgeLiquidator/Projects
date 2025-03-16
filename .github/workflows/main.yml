@@ -1,0 +1,72 @@
+name: Run Code Files
+
+on: [push, pull_request]
+
+jobs:
+  run-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Install Dependencies
+      - name: Install GCC, G++, Java, and Node.js
+        run: |
+          sudo apt update
+          sudo apt install -y gcc g++ default-jdk nodejs
+
+      # Run C Program
+      - name: Run C File
+        run: |
+          if ls *.c 1> /dev/null 2>&1; then
+            for file in *.c; do
+              gcc "$file" -o "${file%.c}.out"
+              ./"${file%.c}.out"
+            done
+          fi
+
+      # Run C++ Program
+      - name: Run C++ File
+        run: |
+          if ls *.cpp 1> /dev/null 2>&1; then
+            for file in *.cpp; do
+              g++ "$file" -o "${file%.cpp}.out"
+              ./"${file%.cpp}.out"
+            done
+          fi
+
+      # Run Python Script
+      - name: Run Python Script
+        run: |
+          if ls *.py 1> /dev/null 2>&1; then
+            for file in *.py; do
+              python "$file"
+            done
+          fi
+
+      # Run Java Program
+      - name: Run Java Program
+        run: |
+          if ls *.java 1> /dev/null 2>&1; then
+            for file in *.java; do
+              javac "$file"
+              java "${file%.java}"
+            done
+          fi
+
+      # Run JavaScript File
+      - name: Run JavaScript File
+        run: |
+          if ls *.js 1> /dev/null 2>&1; then
+            for file in *.js; do
+              node "$file"
+            done
+          fi
+
+      # Serve HTML/CSS/JS Files (Only for Preview)
+      - name: Serve HTML, CSS, and JS Files (Using Python HTTP Server)
+        run: |
+          if ls *.html 1> /dev/null 2>&1; then
+            python -m http.server 8000 &
+            echo "Server running at http://localhost:8000"
+          fi
