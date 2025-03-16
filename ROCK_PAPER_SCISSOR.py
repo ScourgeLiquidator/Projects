@@ -39,4 +39,3 @@ else :
         print("You Lose !")
     else:
         print("You Win !")
-    # hello for now I have been ignored
