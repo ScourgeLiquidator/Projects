@@ -51,13 +51,13 @@ After successful compilation, run the executable file from your terminal:
 
 6. The game continues until one player gets three of their symbols in a row (horizontally, vertically, or diagonally), or until all nine cells are filled, resulting in a tie.
 
-🔬 Code Breakdown
+## **🔬 Code Breakdown**
 The program is structured into several key functions:
 
-main(): This is the entry point of the program. It handles the main game loop, player input, turn management, and calls other functions to manage the game state.
+- main(): This is the entry point of the program. It handles the main game loop, player input, turn management, and calls other functions to manage the game state.
 
-display(char x[3][3]): Takes the 2D character array representing the game board and prints it to the console with formatting.
+- display(char x[3][3]): Takes the 2D character array representing the game board and prints it to the console with formatting.
 
-checkWin(char x[3][3]): Scans the board after each move to check for any of the eight possible winning combinations. It returns 1 if a win is detected and 0 otherwise.
+- checkWin(char x[3][3]): Scans the board after each move to check for any of the eight possible winning combinations. It returns 1 if a win is detected and 0 otherwise.
 
-random1(): This function generates a random and valid move for the computer. It iterates until it finds a cell that is not already occupied.
+- random1(): This function generates a random and valid move for the computer. It iterates until it finds a cell that is not already occupied.
