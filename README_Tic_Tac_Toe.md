@@ -54,7 +54,7 @@ After successful compilation, run the executable file from your terminal:
 ## **🔬 Code Breakdown**
 The program is structured into several key functions:
 
-- main(): This is the entry point of the program. It handles the main game loop, player input, turn management, and calls other functions to manage the game state.
+- '''main()''': This is the entry point of the program. It handles the main game loop, player input, turn management, and calls other functions to manage the game state.
 
 - display(char x[3][3]): Takes the 2D character array representing the game board and prints it to the console with formatting.
 
