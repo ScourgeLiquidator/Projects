@@ -1,7 +1,7 @@
-#**Tic-Tac-Toe Game in C**
+# **Tic-Tac-Toe Game in C**
 This repository contains a simple, text-based, single-player Tic-Tac-Toe game written in the C programming language. You play against a computer opponent that makes random moves.
 
-##**✨ Features**
+## **✨ Features**
 - Player vs. Computer: Play a full game against an AI opponent.
 
 - Symbol Selection: Choose to play as either 'X' or 'O'. The computer will take the other symbol.
@@ -14,7 +14,7 @@ This repository contains a simple, text-based, single-player Tic-Tac-Toe game wr
 
 - Randomized AI: The computer's moves are randomized, providing a different experience each time you play.
 
-##**🚀 Getting Started**
+## **🚀 Getting Started**
 Follow these instructions to compile and run the game on your local machine.
 
 **Prerequisites**
@@ -38,7 +38,7 @@ After successful compilation, run the executable file from your terminal:
 
 ```./tictactoe```
 
-##**룰 How to Play**
+## **룰 How to Play**
 1. Run the program to start the game.
 
 2. You'll be prompted to choose your symbol ('O' or 'X').
