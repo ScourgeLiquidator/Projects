@@ -30,7 +30,9 @@ You need a C compiler, such as GCC, installed on your system.
 4. Compile the code using the following command:
 
 
-```gcc tictactoe.c -o tictactoe```
+```bash
+gcc tictactoe.c -o tictactoe
+ls -l
 
 **Running the Game**
 After successful compilation, run the executable file from your terminal:
