@@ -32,13 +32,15 @@ You need a C compiler, such as GCC, installed on your system.
 
 ```bash
 gcc tictactoe.c -o tictactoe
-ls -l
+```
 
 **Running the Game**
 After successful compilation, run the executable file from your terminal:
 
 
-```./tictactoe```
+```bash
+./tictactoe
+```
 
 ## **룰 How to Play**
 1. Run the program to start the game.
