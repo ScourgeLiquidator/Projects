@@ -16,25 +16,7 @@ reversedict = {1 : "Rock",-1 : "Paper", 0 : "Scissor"}
 print(f"You chose : {reversedict[yc]}\nComputer chose : {reversedict[c]}")
 if(yc == c):
     print("It's a Draw !")
-else :
-    '''
-    if(yc == 1 and c == -1): # (yc - c) = 2
-        print("You Lose !")
-    elif(yc == 1 and c == 0): # (yc - c) = 1
-        print("You Win !")
-        
-    elif(yc == -1 and c == 1): # (yc - c) = -2
-        print("You Win !")
-    elif(yc == -1 and c == 0): # (yc - c) = -1
-        print("You Lose !")
-        
-    elif(yc == 0 and c == 1): # (yc - c) = -1
-        print("You Lose !")
-    elif(yc == 0 and c == -1): # (yc - c) = 1
-        print("You Win !")
-    else:
-        print("Something went wrong !")
-    '''
+else :    
     if((yc - c) == 2 or (yc - c) == -1):
         print("You Lose !")
     else:
