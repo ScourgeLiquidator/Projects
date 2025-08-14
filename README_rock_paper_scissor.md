@@ -12,43 +12,47 @@ This is a classic Rock, Paper, Scissors game implemented in Python. It's a simpl
 
 - ```Input Validation:``` If you enter an invalid character, the game will notify you and exit gracefully.
 
-🚀 Getting Started
+## **🚀 Getting Started**
 All you need is Python installed on your system to play this game.
 
-Prerequisites
-Python 3.x
+## **Prerequisites**
+- Python 3.x
 
-Running the Game
-Save the code as a Python file (e.g., game.py).
+## **Running the Game**
 
-Open your terminal or command prompt.
+1. Save the code as a Python file (e.g., ```game.py```).
 
-Navigate to the directory where you saved the file.
+2. Open your terminal or command prompt.
 
-Run the script with the following command:
+3. Navigate to the directory where you saved the file.
 
+4. Run the script with the following command:
+```bash
 python game.py
+```
 
-룰 How to Play
-When you run the script, you will be prompted to enter your choice.
+## **룰 How to Play**
 
-Type one of the following and press Enter:
+1. When you run the script, you will be prompted to enter your choice.
 
-r for Rock
+2. Type one of the following and press Enter:
 
-p for Paper
+- ```r``` for Rock
 
-s for Scissor
+- ```p``` for Paper
 
-The game will display your choice and the computer's randomly selected choice.
+- ```s``` for Scissor
 
-The winner of the round will be announced, and the game will end.
+3. The game will display your choice and the computer's randomly selected choice.
 
-🔬 Code Logic
-The game's logic is based on a simple numerical comparison:
+4. The winner of the round will be announced, and the game will end.
 
-A dictionary maps the player's input ('r', 'p', 's') to numerical values (1, -1, 0).
+## **🔬 Code Logic**
 
-The computer randomly selects one of these numerical values.
+- The game's logic is based on a simple numerical comparison:
+
+- A dictionary maps the player's input ```('r', 'p', 's')``` to numerical values ```(1, -1, 0)```.
+
+- The computer randomly selects one of these numerical values.
 
 The winner is determined by comparing these two numbers. The specific logic (yc - c) == 2 or (yc - c) == -1 cleverly covers the "losing" conditions (e.g., Paper vs. Scissor, Scissor vs. Rock). Any other non-draw outcome is a win.
