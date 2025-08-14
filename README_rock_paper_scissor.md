@@ -55,4 +55,4 @@ python game.py
 
 - The computer randomly selects one of these numerical values.
 
-The winner is determined by comparing these two numbers. The specific logic (yc - c) == 2 or (yc - c) == -1 cleverly covers the "losing" conditions (e.g., Paper vs. Scissor, Scissor vs. Rock). Any other non-draw outcome is a win.
+The winner is determined by comparing these two numbers. The specific logic ```(yc - c) == 2 or (yc - c) == -1``` cleverly covers the "losing" conditions (e.g., Paper vs. Scissor, Scissor vs. Rock). Any other non-draw outcome is a win.
